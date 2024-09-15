@@ -24,6 +24,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+/**
+ * 主页上面显示日期和搜索框的顶栏
+ */
 @Composable
 fun TopBarView(modifier: Modifier = Modifier) {
     Row(
