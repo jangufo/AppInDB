@@ -1,7 +1,6 @@
 package com.study.appindb.ui.shared
 
 import android.annotation.SuppressLint
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.*
@@ -16,6 +15,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.study.appindb.R
 import com.study.appindb.ui.theme.AppInDBTheme
+import com.study.appindb.views.calendarscreen.CalendarScreen
+import com.study.appindb.views.homescreen.HomeScreen
+import com.study.appindb.views.myscreen.MyScreen
+import com.study.appindb.views.statisticalscreen.StatisticalScreen
 
 // Android15 以上应用不能强制全屏了
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -68,12 +71,12 @@ fun MainScreen() {
             }
         }
         ) {
-           when(selectTab){
-               0-> Column(){}
-               1-> Column(){}
-               2-> Column(){}
-               3-> Column(){}
-           }
+            when (selectTab) {
+                0 -> HomeScreen()
+                1 -> CalendarScreen()
+                2 -> StatisticalScreen()
+                3 -> MyScreen()
+            }
         }
     }
 }

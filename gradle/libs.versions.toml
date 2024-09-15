@@ -1,7 +1,6 @@
 [versions]
-#noinspection AndroidGradlePluginVersion
-agp = "8.6.0-alpha07"
-kotlin = "1.9.0"
+agp = "8.6.0"
+kotlin = "1.9.20"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -11,6 +10,7 @@ activityCompose = "1.9.2"
 composeBom = "2024.09.01"
 roomRuntime = "2.6.1"
 protoliteWellKnownTypes = "18.0.0"
+ksp = "1.9.20-1.0.14"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,4 +35,4 @@ protolite-well-known-types = { group = "com.google.firebase", name = "protolite-
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
